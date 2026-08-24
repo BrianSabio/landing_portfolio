@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brian Ezequiel Sabio | Desarrollador Backend</title>
+  <meta name="description" content="Portafolio de Brian Ezequiel Sabio, desarrollador Backend especializado en Java, C# y APIs RESTful.">
+
+  <!-- Google Fonts: Roboto (texto) + Fira Code (acentos tipo terminal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--
+    Estructura semántica: header > nav, main > section (about, skills,
+    proyectos, formación, contacto), footer.
+    Identidad visual: estética terminal/CLI (coherente con el uso diario
+    de Bash/PowerShell/Git del perfil), en paleta azul cobalto con
+    toggle dark/light.
+  -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Ir al inicio">
+        <span class="brand-mark">[BS]</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#about">~/about</a></li>
+          <li><a href="#skills">~/skills</a></li>
+          <li><a href="#proyectos">~/proyectos</a></li>
+          <li><a href="#formacion">~/formacion</a></li>
+          <li><a href="#contacto">~/contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost btn-icon" href="https://github.com/BrianSabio" target="_blank" rel="noopener noreferrer">
+          <img src="icons/github.svg" alt="Ícono del logo de GitHub" class="icon icon-inline">
+          GitHub ↗
+        </a>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo claro">
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="terminal-window" aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <p class="terminal-line">
+              <span class="prompt">brian@backend</span><span class="prompt-sep">:~$</span> whoami
+            </p>
+            <p class="terminal-output">Brian Ezequiel Sabio — Desarrollador Backend</p>
+          </div>
+
+          <h1>Brian Ezequiel Sabio</h1>
+          <p class="hero-role">Desarrollador Backend · Java · C# · Node.js</p>
+          <p class="hero-desc">
+            Construyo APIs RESTful, arquitecturas en capas y bases de datos
+            robustas. Actualmente cursando la Tecnicatura Superior en
+            Desarrollo de Software (IFTS N°29) en Buenos Aires, Argentina.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://github.com/BrianSabio" target="_blank" rel="noopener noreferrer">
+              Ver mi GitHub
+            </a>
+            <a class="btn btn-outline" href="#contacto">
+              Contactame
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">~/about</p>
+        <h2>Presentación</h2>
+        <div class="about-grid">
+          <p>
+            Soy desarrollador Backend con experiencia práctica en
+            <strong>Java (Spring Boot)</strong>, <strong>C# (.NET Core,
+            Entity Framework)</strong> y <strong>Node.js</strong>. Me
+            especializo en el diseño de APIs RESTful, arquitectura en capas
+            y bases de datos SQL con procedimientos almacenados.
+          </p>
+          <p>
+            Mi proyecto principal es una aplicación de escritorio en
+            .NET + MySQL para la gestión de un club deportivo. Además,
+            complemento mi formación con análisis de datos en Python y una
+            introducción al desarrollo de contratos inteligentes en
+            Blockchain.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">~/skills</p>
+        <h2>Habilidades Técnicas</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Lenguajes &amp; Frameworks</h3>
+            <ul class="tag-list">
+              <li>$ java</li>
+              <li>$ spring-boot</li>
+              <li>$ csharp</li>
+              <li>$ dotnet-core</li>
+              <li>$ entity-framework</li>
+              <li>$ typescript</li>
+              <li>$ node-js</li>
+              <li>$ python</li>
+              <li>$ kotlin</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Datos &amp; Bases de Datos</h3>
+            <ul class="tag-list">
+              <li>$ sql</li>
+              <li>$ stored-procedures</li>
+              <li>$ postgresql</li>
+              <li>$ mysql</li>
+              <li>$ pandas</li>
+              <li>$ jupyter</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Herramientas</h3>
+            <ul class="tag-list">
+              <li>$ git</li>
+              <li>$ github</li>
+              <li>$ postman</li>
+              <li>$ powershell</li>
+              <li>$ bash</li>
+              <li>$ notion</li>
+              <li>$ trello</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Metodologías &amp; Diseño</h3>
+            <ul class="tag-list">
+              <li>$ rest-apis</li>
+              <li>$ poo</li>
+              <li>$ singleton</li>
+              <li>$ scrum</li>
+              <li>$ uml</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <p class="eyebrow">~/proyectos</p>
+        <h2>Proyectos Destacados</h2>
+
+        <div class="projects-grid">
+          
+          <article class="project-card">
+            <h3>Mobile-Club-Deportivo — App Android</h3>
+            <p class="project-stack">Kotlin + XML + SQLite</p>
+            <p>
+              Aplicación móvil para Android que porta y optimiza un sistema
+              de gestión de escritorio. Registro, modificación y visualización
+              de datos de miembros de club deportivo con persistencia local.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/Mobile-Club-Deportivo" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>ClinicaSePrise — Sistema de Gestión Clínico</h3>
+            <p class="project-stack">C# (.NET 8) + Clean Architecture + DDD</p>
+            <p>
+              Sistema integral para consultorios externos con arquitectura
+              en capas, Domain-Driven Design y 41 tests de integración.
+              Gestión de pacientes, turnos, acreditación y atenciones médicas.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/ClinicaSePrise" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>Sitio NatAstral — Plataforma de Reservas</h3>
+            <p class="project-stack">TypeScript + Node.js + Prisma + Vercel</p>
+            <p>
+              Plataforma web para reserva y gestión de servicios astrológicos.
+              Integración con WhatsApp, Google Calendar y despliegue en Vercel.
+              Diseño minimalista centrado en la experiencia del usuario.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/Sitio_NatAstral" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>LiteraLura — Gestor de Libros</h3>
+            <p class="project-stack">Java (Spring Boot) + PostgreSQL</p>
+            <p>
+              Aplicación de consola con integración a la API de Gutendex.
+              Búsqueda de libros por título, listado de autores/libros y
+              filtrado por idioma y año con persistencia en base de datos.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/LiteraLura_challenge" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>ForoHub — API REST de Foro</h3>
+            <p class="project-stack">Java (Spring Boot) + JWT + MySQL</p>
+            <p>
+              API REST con operaciones CRUD para gestión de foro de discusión.
+              Seguridad mediante JWT, migraciones automáticas con Flyway y
+              documentación interactiva con Swagger/OpenAPI.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/ForoHub_challenge" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <h3>AlkeWallet — Billetera Digital</h3>
+            <p class="project-stack">Java + TDD + JUnit 5</p>
+            <p>
+              Billetera digital interactiva por consola desarrollada en Java.
+              Implementa POO, manejo de excepciones y testing con TDD.
+              Arquitectura backend estructurada y diseño profesional.
+            </p>
+            <a class="project-link" href="https://github.com/BrianSabio/Alke_Wallet" target="_blank" rel="noopener noreferrer">
+              Ver repositorio ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN (sección personal) -->
+    <section id="formacion" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">~/formacion</p>
+        <h2>Formación &amp; Especialización</h2>
+
+        <div class="formacion-grid">
+          <div class="formacion-card">
+            <h3>Educación Formal</h3>
+            <ul>
+              <li>Tecnicatura Superior en Desarrollo de Software — IFTS N°29 (en curso)</li>
+              <li>Oracle Next Education Program — Oracle + Alura Latam (2024)</li>
+              <li>Bootcamp de Desarrollo Blockchain — ETH KIPU (2024)</li>
+            </ul>
+          </div>
+
+          <div class="formacion-card">
+            <h3>Aprendizaje Continuo</h3>
+            <p>
+              Autodidacta en plataformas como FreeCodeCamp, Udemy y
+              Codecademy. Enfocado en mantenerme actualizado en
+              tecnologías backend, arquitectura de software y desarrollo
+              blockchain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <p class="eyebrow">~/contacto</p>
+        <h2>Hablemos</h2>
+        <p class="contact-intro">
+          La forma más directa de contactarme es por correo. También podés
+          escribirme usando el formulario, que abre tu cliente de mail con
+          el mensaje ya cargado.
+        </p>
+
+        <div class="contact-grid">
+          <a class="contact-direct" href="mailto:brianez.sa.ba@gmail.com">
+            <img src="icons/mail.svg" alt="Ícono de sobre de correo electrónico" class="icon icon-inline">
+            brianez.sa.ba@gmail.com
+          </a>
+
+          <form
+            class="contact-form"
+            action="mailto:brianez.sa.ba@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-field">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="mensaje" rows="5" placeholder="Contame en qué puedo ayudarte" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Brian Ezequiel Sabio</p>
+      <a href="https://github.com/BrianSabio" target="_blank" rel="noopener noreferrer" class="footer-github">
+        <img src="icons/github.svg" alt="Ícono del logo de GitHub" class="icon icon-inline">
+        github.com/BrianSabio ↗
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
