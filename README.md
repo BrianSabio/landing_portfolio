@@ -14,7 +14,7 @@ Este proyecto es una **landing page responsiva** que presenta el perfil profesio
 - **Tipo:** Proyecto de Formación Obligatoria (PFO1)
 - **Fecha de Entrega:** 24/08/2026
 - **Repositorio:** https://github.com/BrianSabio/landing_portfolio
-- **URL en Vercel:** *(pendiente de despliegue)*
+- **URL en Vercel:** https://landing-portfolio-nine.vercel.app
 
 ---
 
